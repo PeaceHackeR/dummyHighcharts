@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HighStock</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        body {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header clearfix">
+            <h3 class="text-muted">Hight Stock</h3>
+        </div>
+
+        <div class="jumbotron">
+            <h1>Lorem Ipsum</h1>
+            <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        </div>
+
+        <div class="row">
+            <div class="form-group col-md-8">
+                <div class="row">
+                    <div class="col-md-2">
+                        <label class="control-label">TIME FRAME</label>
+                    </div>
+                    <div class="col-md-10 fx-input-timeframe">
+                        <div class="btn-group" role="group" aria-label="...">
+                            <button type="button" class="btn btn-default" value="0">1D</button>
+                            <button type="button" class="btn btn-default" value="1">1M</button>
+                            <button type="button" class="btn btn-default" value="2">3M</button>
+                            <button type="button" class="btn btn-default" value="3">6M</button>
+                            <button type="button" class="btn btn-default" value="4">YTD</button>
+                            <button type="button" class="btn btn-default" value="5">1Y</button>
+                            <button type="button" class="btn btn-default" value="6">All</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group col-md-4">
+                <div class="row">
+                    <div class="col-md-4">
+                        <label class="control-label">CHART TYPE</label>
+                    </div>
+                    <div class="col-md-8">
+                        <label class="radio-inline">
+                            <input value="line" type="radio" name="fx-r-01" class="styled fx-input-type" checked> Line
+                        </label><br>
+                        <label class="radio-inline">
+                            <input value="ohlc" type="radio" name="fx-r-01" class="styled fx-input-type"> Candlestick
+                        </label><br>
+                        <label class="radio-inline">
+                            <input value="columnrange" type="radio" name="fx-r-01" class="styled fx-input-type"> Column range
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="row marketing">
+            <div class="col-md-12">
+                <div id="stockPrice" style="height: 400px; min-width: 310px"></div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; 2017 The Listed.</p>
+        </footer>
+
+    </div>
+    <!-- /container -->
+
+    <style>
+        .highcharts-range-selector-buttons {
+/*            display: none;*/
+        }
+
+    </style>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://code.highcharts.com/stock/highstock.js"></script>
+    <script src="https://code.highcharts.com/stock/highcharts-more.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="underscore-min.js"></script>
+    <script src="momentjs.js"></script>
+    <script src="stock-themes.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
